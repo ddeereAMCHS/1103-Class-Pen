@@ -1,77 +1,74 @@
-# Car Class
+# Pen Class
 
-## Due: Wed 2/1 at 11:59 PM
+## Due: Wed 2/8 at 11:59 PM
 
-- Create a program called `Car.java`
-- The Car class should have the following data members:
-  - The make
-  - The model
-  - The number of doors
-  - The number of seats
-  - The miles per gallon (as a floating point number)
-  - The gas tank size in gallons (as a floating point number)
-- The Car class should have the following constructors:
+- Create a program called `Pen.java`
+- The Pen class should have the following data members:
+  - The brand
+  - The color
+  - The thickness
+  - The ink level
+  - The status of whether the pen is clicked or not
+- The Pen class should have the following constructors:
   - Default
-  - A constructor that takes the make and model
-  - A constructor that takes parameters for all six data members
-- The Car class should have getter and setter methods for each data member
-- The Car class should have a toString method that returns the make and model of the Car separated by a space
-- The Car class should have the following other methods:
-  - an isGasGuzzler method that returns true if the miles per gallon is less than 15.0
-  - an isSpacious method that returns true if the number of seats is greater than 5
-  - a maximumDistance method that returns the maximum distance the Car can travel with a full tank of gas
-  - a honk method that prints "HONK" to the screen
-  - a canTravelDistance that takes a double as a parameter which is the distance to be traveled and returns true if the Car can travel that distance with a full tank of gas
+    - The ink level should be set to 50
+    - The status of whether the pen is clicked or not should be set to not clicked
+  - A constructor that takes the brand, the color, and the thickness
+    - The ink level should be set to 50
+    - The status of whether the pen is clicked or not should be set to not clicked
+- The Pen class should have getter and setter methods for each data member
+- The Pen class should have a toString method that returns the color and brand of the Pen separated by a space and followed by the word "pen"
+- The Pen class should have the following other methods:
+  - a click method that toggles the status of whehter the pen is clicked or not
+  - a twirl method that prints "OOOH" to the screen
+  - a write method that takes a String and prints it to the screen if it is able to do so
+    - the Pen can only write if it is clicked
+      - if the Pen cannot write, nothing should be printed to the screen
+    - the Pen can only write as many characters as it has ink for
+      - each character requires 1 ink to write
+    - decrease the ink level of the Pen after writing
+    - each call to the write method should start on a new line
 - - - -
-* Create a program called `CarTester.java`
-* Create a Car object using the default constructor
-* Prompt the user for the following values and store them in variables:
-  * Make
-  * Model
-  * Number of doors
-  * Number of seats
-  * Miles per gallon
-  * Gas tank size
-* Use the setter methods to assign those values to the Car object
-* Prompt the user again for the following values and store them in variables:
-  * Make
-  * Model
-  * Number of doors
-  * Number of seats
-  * Miles per gallon
-  * Gas tank size
-* Use those values to create another Car object using the parameterized constructor
-* Prompt the user for a double
-  * This will be the distance to be traveled
-* For each Car:
-  * Print the make and model of that Car
-  * Print whether the Car is or is not a gas guzzler
-  * Print whether the Car is or is not spacious
-  * Call that Car's honk method
-  * Print whether the Car can travel the distance the user entered
+- Create a program called `PenTester.java`
+- Create a Pen object using the default constructor
+- Prompt the user for the following values and store them in variables:
+  - The brand
+  - The color
+  - The thickness
+- Use the setter methods to assign those values to the Pen object
+- Prompt the user again for the following values and store them in variables:
+  - The brand
+  - The color
+  - The thickness
+- Use those values to create another Pen object using the parameterized constructor
+- For the first Pen:
+  - Print the Pen
+  - Try to write "Hello there"
+  - Click the Pen
+  - Try to write "This is where the fun begins"
+  - Click the Pen twice
+  - Try to write "I've got a bad feeling about this"
+  - Twirl the Pen
+- For the second Pen:
+  - Print the Pen
+  - Try to write "General Kenobi"
+  - Click the Pen
+  - Try to write "This is getting out of hand. Now there are two of them"
+  - Click the Pen
+  - Twirl the Pen
 - - - -
 ***Example Input:***\
-Chevy\
-Suburban\
-4\
-7\
-21.1\
-27.8\
-Ford\
-Mustang\
-2\
-4\
-13.4\
-16.0\
-332.5\
+Pilot\
+Maroon\
+0.5\
+Papermate\
+Blue\
+0.7\
 ***Example Output:***\
-Chevy Suburban\
-The Chevy Suburban is not a gas guzzler\
-The Chevy Suburban is spacious\
-HONK\
-The Chevy Suburban can travel 332.5 miles on a full tank of gas\
-Ford Mustang\
-The Ford Mustang is a gas guzzler\
-The Ford Mustang is not spacious\
-HONK\
-The Ford Mustang cannot travel 332.5 miles on a full tank of gas
+Maroon Pilot pen\
+This is where the fun begins\
+I've got a bad feeling\
+OOOH\
+Blue Papermate pen\
+This is getting out of hand. Now there are two of \
+OOOH
