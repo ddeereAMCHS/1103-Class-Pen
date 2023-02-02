@@ -16,7 +16,7 @@
   - A constructor that takes the brand, the color, and the thickness
     - The ink level should be set to 50
     - The status of whether the pen is clicked or not should be set to not clicked
-- The Pen class should have getter and setter methods for each data member
+- The Pen class should have getter and setter methods for each data member except for the status of whether the pen is clicked or not
 - The Pen class should have a toString method that returns the color and brand of the Pen separated by a space and followed by the word "pen"
 - The Pen class should have the following other methods:
   - a click method that toggles the status of whehter the pen is clicked or not
