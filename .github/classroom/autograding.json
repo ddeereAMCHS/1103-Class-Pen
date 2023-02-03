@@ -1,22 +1,21 @@
 {
   "tests": [
     {
-      "name": "Chevy Suburban, Ford Mustang",
-      "setup": "javac CarTester.java",
-      "run": "java CarTester",
-      "input": "Chevy\nSuburban\n4\n7\n21.1\n27.8\nFord\nMustang\n2\n4\n13.4\n16.0\n332.5",
-      "output": "Chevy Suburban\nThe Chevy Suburban is not a gas guzzler\nThe Chevy Suburban is spacious\nHONK\nThe Chevy Suburban can travel 332.5 miles on a full tank of gas\nFord Mustang\nThe Ford Mustang is a gas guzzler\nThe Ford Mustang is not spacious\nHONK\nThe Ford Mustang cannot travel 332.5 miles on a full tank of gas$",
+      "name": "Maroon Pilot, Blue Papermate",
+      "setup": "javac PenTester.java",
+      "run": "java PenTester",
+      "input": "Pilot\nMaroon\n0.5\nPapermate\nBlue\n0.7",
+      "output": "Maroon Pilot pen\nThis is where the fun begins\nI've got a bad feeling\nOOOH\nBlue Papermate pen\nThis is getting out of hand. Now there are two of \nOOOH$",
       "comparison": "regex",
       "timeout": 10,
       "points": null
     },
     {
-      "name": "Ford Mustang, Chevy Suburban",
-      "setup": "javac CarTester.java",
-      "run": "java CarTester",
-      "input": "Ford\nMustang\n2\n4\n13.4\n16.0\nChevy\nSuburban\n4\n7\n21.1\n27.8\n332.5",
-      "output": "Ford Mustang\nThe Ford Mustang is a gas guzzler\nThe Ford Mustang is not spacious\nHONK\nThe Ford Mustang cannot travel 332.5 miles on a full tank of gas\nChevy Suburban\nThe Chevy Suburban is not a gas guzzler\nThe Chevy Suburban is spacious\nHONK\nThe Chevy Suburban can travel 332.5 miles on a full tank of gas$",
-      "comparison": "regex",
+      "name": "Blue Papermate, Maroon Pilot",
+      "setup": "javac PenTester.java",
+      "run": "java PenTester",
+      "input": "Papermate\nBlue\n0.7\nPilot\nMaroon\n0.5",
+      "output": "Blue Papermate pen\nThis is getting out of hand. Now there are two of \nOOOH\nMaroon Pilot pen\nThis is where the fun begins\nI've got a bad feeling\nOOOH",
       "timeout": 10,
       "points": null
     }
