@@ -19,7 +19,7 @@
 - The Pen class should have getter and setter methods for each data member except for the status of whether the pen is clicked or not
 - The Pen class should have a toString method that returns the color and brand of the Pen separated by a space and followed by the word "pen"
 - The Pen class should have the following other methods:
-  - a click method that toggles the status of whehter the pen is clicked or not
+  - a click method that toggles the status of whether the pen is clicked or not
   - a twirl method that prints "OOOH" to the screen
   - a write method that takes a String and prints it to the screen if it is able to do so
     - the Pen can only write if it is clicked
