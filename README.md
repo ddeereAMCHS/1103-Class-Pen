@@ -1,6 +1,6 @@
 # Pen Class
 
-## Due: Wed 2/8 at 11:59 PM
+## Due: Wed 2/7 at 11:59 PM
 
 - Create a program called `Pen.java`
 - The Pen class should have the following data members:
