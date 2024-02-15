@@ -25,7 +25,7 @@
     - the Pen can only write if it is clicked
       - if the Pen cannot write, nothing should be printed to the screen
     - the Pen can only write as many characters as it has ink for
-      - each character requires 1 ink to write
+      - each character (including spaces) requires 1 ink to write
     - decrease the ink level of the Pen after writing
     - each call to the write method should start on a new line
 - - - -
